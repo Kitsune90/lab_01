@@ -9,23 +9,33 @@
 #ifndef Elenco_hpp
 #define Elenco_hpp
 
-#include <iostream>
-#include <list>
-
 #include "Persona.hpp"
+
+#include <iostream>
+#include <vector>
+#include <iterator>
+#include <algorithm>
 
 #endif /* Elenco_hpp */
 
 class Elenco {
 private:
-    std::list<Persona> persone;
+    std::vector<Persona> persone;
     int numeroPersone;
     
 public:
     Persona get(int i);
-    bool add(Persona p);
+    void add(Persona p);
     Persona pop();
     Persona remove(int i);
     int size();
-    bool clear();
+    void clear();
+    
+    /*
+     * Costruttori e distruttori
+     */
+    Elenco();
+    Elenco(Persona p);
+    ~Elenco();
 };
+

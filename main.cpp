@@ -15,12 +15,13 @@ using namespace std;
 /*
  Questo è il main voluto dal professore, non si deve cambiare.
  */
-int _tmain(int argc, _TCHAR* argv[]){
+int main(int argc, char* argv[]){
+
     
     Elenco e1;
-    e1.add(Persona("Alessandro","Becero"));
-    e1.add(Persona("Carlo","Dado"));
-    e1.add(Persona("Elena","Fottuta"));
+    e1.add(Persona("A","B"));
+    e1.add(Persona("C","D"));
+    e1.add(Persona("E","F"));
     
     Elenco e2=e1;
     
@@ -42,7 +43,7 @@ int _tmain(int argc, _TCHAR* argv[]){
             <<endl;
     
     cout<<endl;
-    
+
     e1.clear();
     
     cout<<e1.size()<<endl;

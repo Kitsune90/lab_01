@@ -10,6 +10,11 @@
 #define Persona_hpp
 
 #include <iostream>
+#include <string.h>
+#include <string>
+#include <list>
+#include <iterator>
+#include <algorithm>
 
 #endif /* Persona_hpp */
 
@@ -17,6 +22,9 @@ class Persona {
 public:
     std::string getNome();
     std::string getCognome();
+    Persona();
+    Persona(std::string n, std::string c);
+    ~Persona();
     
 private:
     std::string nome;
